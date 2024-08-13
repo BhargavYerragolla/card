@@ -107,14 +107,14 @@
       <img src="./images/icon-sedans.svg" alt="Sedans Icon">
       <h1>SEDANs</h1>
       <h6>Choose a sedan for its<br> affordability and excellent <br>fuel economy.Ideal for<br> cruising in the city or on <br>your next road trip.</h6>
-      <a href="/" class="bn3">Learn More</a>
+      <a href="#" class="bn3" onclick="redirectToYouTube()">Learn More</a>
     </div>
   
     <div class="card sedan2">
       <img src="./images/icon-suvs.svg" alt="SUVs Icon">
       <h1>SUVs</h1>
       <h6>Take an SUV for its spacious<br> interior, power, and<br> versatility. Perfect for your <br>next family vacation and<br> off-road adventures.</h6>
-      <a href="/" class="bn3">Learn More</a>
+      <a href="#" class="bn3" onclick="redirectToYouTube1()">Learn More</a>
 
     </div>
   
@@ -122,9 +122,22 @@
       <img src="./images/icon-luxury.svg" alt="Luxury Icon">
       <h1>LUXURY</h1>
       <h6>Cruise in the best car brands<br> without the bloated prices.<br> Enjoy the enhanced comfort<br> of a luxury rental and arrive<br> in style.</h6>
-      <a href="/" class="bn3">Learn More</a>
+      <a href="#" class="bn3" onclick="redirectToYouTube2()">Learn More</a>
 
     </div>
   </div>
+
+  <script>
+    function redirectToYouTube() {
+      window.location.href = 'https://www.youtube.com/results?search_query=skoda+sedan+car';
+    }
+    function redirectToYouTube1() {
+      window.location.href = 'https://www.youtube.com/results?search_query=skoda+suv+car';
+    }
+    function redirectToYouTube2() {
+      window.location.href = 'https://www.youtube.com/watch?v=Vsx29BUQ04o';
+    }
+  </script>
+
 </body>
 </html>
