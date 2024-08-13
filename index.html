@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Importing the fonts from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f8f8;
+    }
+
+    h1 {
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-weight: 700;
+      margin-top: 60px; /* Lowering the position of the text */
+      text-align: left;
+
+    }
+
+    h6 {
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 400;
+      text-align: left;
+      margin-top: 20px;
+      line-height: 2;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      height: 300px;
+      width: 200px;
+      padding: 20px;
+      color: rgb(249, 246, 246);
+      margin: -5px;
+      border-radius: 10px;
+      position: relative;
+      text-align: center;
+    }
+
+    .card img {
+      position: absolute;
+      top: 20px; /* Adjusting the position of the icon */
+      left: 30px;
+      width: 50px;
+      height: 30px;
+    }
+
+    .sedan1 {
+      background-color: #FF7F3E;
+      border-radius: 10px 0 0 10px;
+    }
+
+    .sedan2 {
+      background-color: #016871;
+      border-radius: 0 0 0 0;
+
+    } 
+
+    .sedan3 {
+      background-color: #003F3E;
+      border-radius: 0 10px 10px 0;
+
+    }
+
+    .bn3 {
+      display: inline-block;
+      padding: 0.4em 1.4em;
+      margin: 10px 0 0;
+      border: 0.16em solid rgb(250, 248, 248);
+      border-radius: 1.2em;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      color: #fdf8f8;
+      text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+      text-align: center;
+      transition: all 2s;
+      /* background-color: #007BFF; Adjust background color if needed */
+}
+
+.bn3:hover {
+  color: black;
+  background-color: rgb(255, 254, 254);
+}
+  </style>
+</head>
+<body>
+  <div class="container">  
+    <div class="card sedan1">
+      <img src="./images/icon-sedans.svg" alt="Sedans Icon">
+      <h1>SEDANs</h1>
+      <h6>Choose a sedan for its<br> affordability and excellent <br>fuel economy.Ideal for<br> cruising in the city or on <br>your next road trip.</h6>
+      <a href="/" class="bn3">Learn More</a>
+    </div>
+  
+    <div class="card sedan2">
+      <img src="./images/icon-suvs.svg" alt="SUVs Icon">
+      <h1>SUVs</h1>
+      <h6>Take an SUV for its spacious<br> interior, power, and<br> versatility. Perfect for your <br>next family vacation and<br> off-road adventures.</h6>
+      <a href="/" class="bn3">Learn More</a>
+
+    </div>
+  
+    <div class="card sedan3">
+      <img src="./images/icon-luxury.svg" alt="Luxury Icon">
+      <h1>LUXURY</h1>
+      <h6>Cruise in the best car brands<br> without the bloated prices.<br> Enjoy the enhanced comfort<br> of a luxury rental and arrive<br> in style.</h6>
+      <a href="/" class="bn3">Learn More</a>
+
+    </div>
+  </div>
+</body>
+</html>
